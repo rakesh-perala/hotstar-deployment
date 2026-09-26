@@ -12,7 +12,7 @@ pipeline {
         stage('Git Checkout') {
             steps {
                 git branch: 'main',
-                    url: ''
+                    url: 'https://github.com/rakesh-perala/hotstar-deployment.git'
             }
         }
 
