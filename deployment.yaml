@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: springboot-app
+  name: hotstar-app
   labels:
-    app: springboot-app
+    app: hotstar-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: springboot-app
+      app: hotstar-app
   template:
     metadata:
       labels:
-        app: springboot-app
+        app: hotstar-app
     spec:
       containers:
-      - name: springboot-app
+      - name: hotstar-app
         image: dockerperala/hotstar
         ports:
         - containerPort: 8080
